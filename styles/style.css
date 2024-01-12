@@ -67,14 +67,15 @@ main#container div#formulario p {
 
 main#container div#formulario input#iemail, input#isenha {
     background-color: #a1e9e6;
-    width: 79%;
-    height: 33px;
-    border-radius: 5px;
-    padding-left: 10px;
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border-radius: 8px;
+    padding-left: 4px;
     border: none;
 }
 
-main#container div#formulario input#iemail:focus, input#isenha:focus {
+main#container div#formulario input#iemail:focus-within, input#isenha:focus-within {
     background-color: white;
 }
 
@@ -83,17 +84,19 @@ main#container div#formulario div#caixa-input {
     width: 100%;
     height: 40px;
     margin: 5px 0px;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
 
     background-color: var(--cor2);
+    border: 2px solid var(--cor2);
 }
 
 main#container div#formulario div#caixa-input i {
     color: white;
-    font-size: 35px;
-    margin: 0px 5px;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
 main#container div#formulario div#caixa-input label {

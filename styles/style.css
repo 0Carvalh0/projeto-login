@@ -18,6 +18,7 @@
 }
 
 body, html {
+    box-sizing: border-box;
     background-color: var(--cor2);
     width: 100vw;
     height: 100vh;
@@ -51,11 +52,16 @@ main#container div#formulario h1 {
 }
 
 main#container div#formulario input#iemail, input#isenha {
+    background-color: #a1e9e6;
     width: 78%;
     height: 33px;
     border-radius: 5px;
     padding-left: 10px;
     border: none;
+}
+
+main#container div#formulario input#iemail:focus, input#isenha:focus {
+    background-color: white;
 }
 
 main#container div#formulario div#caixa-input {
@@ -90,13 +96,25 @@ main#container div#formulario input#entrar {
     margin-bottom: 5px;
 }
 
+main#container div#formulario input#entrar:hover {
+    background-color: #5dcac7;
+    border: 2px solid var(--cor1);
+}
+
 main#container div#formulario input#esqueci-senha {
     background-color: white;
     color: var(--cor1);
-    border: 1px solid var(--cor1);
+    border: 2px solid var(--cor1);
+}
+
+main#container div#formulario input#esqueci-senha:hover {
+    background-color: var(--cor1);
+    color: white;
 }
 
 main#container div#formulario input#entrar, input#esqueci-senha {
+    font-weight: bolder;
+    font-size: 15px;
     border: none;
     border-radius: 10px;
     width: 100%;

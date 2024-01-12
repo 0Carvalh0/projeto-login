@@ -58,7 +58,11 @@ main#container div#formulario {
 
 main#container div#formulario h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+main#container div#formulario p {
+    font-size: .8em;
 }
 
 main#container div#formulario input#iemail, input#isenha {
@@ -111,22 +115,26 @@ main#container div#formulario input#entrar:hover {
     border: 2px solid var(--cor1);
 }
 
-main#container div#formulario input#esqueci-senha {
+main#container div#formulario a#esqueci-senha {
     background-color: white;
     color: var(--cor1);
     border: 2px solid var(--cor1);
 }
 
-main#container div#formulario input#esqueci-senha:hover {
+main#container div#formulario a#esqueci-senha:hover {
     background-color: var(--cor1);
     color: white;
 }
 
-main#container div#formulario input#entrar, input#esqueci-senha {
+main#container div#formulario input#entrar, a#esqueci-senha {
     font-weight: bolder;
     font-size: 15px;
     border: none;
     border-radius: 10px;
     width: 100%;
     height: 40px;
+}
+
+main#container div#formulario a#esqueci-senha {
+    text-decoration: none;
 }

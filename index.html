@@ -22,16 +22,18 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <div id="caixa-input">
                         <i class="material-symbols-outlined">person</i>
-                        <input type="email" name="email" id="iemail" required placeholder="Seu E-mail" autocomplete="email">
+                        <input type="email" name="email" id="iemail" required placeholder="Seu E-mail" maxlength="30" autocomplete="email">
+                        <label for="iemail">E-mail</label>
                     </div>
 
                     <div id="caixa-input">
                         <i class="material-symbols-outlined">vpn_key</i>
-                        <input type="password" name="senha" id="isenha" required placeholder="Sua Senha" minlength="8" autocomplete="current-password">
+                        <input type="password" name="senha" id="isenha" required placeholder="Sua Senha" minlength="8" maxlength="20" autocomplete="current-password">
+                        <label for="isenha">Senha</label>
                     </div>
 
                     <input type="submit" value="Entrar" id="entrar">
-                    <input type="button" value="Esqueci a senha" id="esqueci-senha">
+                    <a href="esqueci.html" id="esqueci-senha">Esqueci a senha <i class="material-symbols-outlined">mail</i></a>
                 </form>
             </div>
         </section>

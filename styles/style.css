@@ -1,153 +1,141 @@
 @charset "UTF-8";
 
-/* 
-    PALETA DE CORES
-    Verde: #49a09d
-    Lilás: #5f2c82
-*/
-
 :root {
-    --cor1: #49a09d;
-    --cor2: #5f2c82;
+  --cor1: #49a09d;
+  --cor2: #5f2c82;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body, html {
-    background-color: var(--cor2);
-    width: 100vw;
-    height: 100vh;
+body,
+html {
+  width: 100vw;
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--cor2);
 }
 
 main#container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
 }
 
-section#login {
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
-    
-    border-radius: 20px;
-    overflow: hidden;
-    width: 250px;
-
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
-}
-
-main > section#login > div#imagem {
-    display: block;
-    height: 200px;
-    background: var(--cor2) url('../images/img001.jpg') no-repeat;
-    background-size: cover;
+main#container > div#imagem {
+  display: block;
+  height: 200px;
+  background: var(--cor2) url("../images/img001.jpg") no-repeat left;
+  background-size: cover;
 }
 
 main#container div#formulario {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
 main#container div#formulario h1 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 main#container div#formulario p {
-    font-size: .8em;
+  font-size: 0.8em;
 }
 
-main#container div#formulario input#iemail, input#isenha {
-    background-color: #a1e9e6;
-    font-size: 1em;
-    width: calc(100% - 40px);
-    height: 100%;
-    border-radius: 8px;
-    padding-left: 4px;
-    border: none;
+main#container div#formulario input#iemail,
+input#isenha {
+  background-color: #a1e9e6;
+  font-size: 1em;
+  width: calc(100% - 40px);
+  height: 100%;
+  border-radius: 8px;
+  padding-left: 4px;
+  border: none;
 }
 
-main#container div#formulario input#iemail:focus-within, input#isenha:focus-within {
-    background-color: white;
+main#container div#formulario input#iemail:focus-within,
+input#isenha:focus-within {
+  background-color: white;
 }
 
 main#container div#formulario div#caixa-input {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    margin: 5px 0px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 5px 0px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 
-    background-color: var(--cor2);
-    border: 2px solid var(--cor2);
+  background-color: var(--cor2);
+  border: 2px solid var(--cor2);
 }
 
 main#container div#formulario div#caixa-input i {
-    color: white;
-    font-size: 2em;
-    width: 40px;
-    padding: 5px;
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
 }
 
 main#container div#formulario div#caixa-input label {
-    display: none;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 35
+  display: none;
 }
 
 main#container div#formulario input#entrar {
-    background-color: var(--cor1);
-    color: white;
-    margin-bottom: 5px;
-    cursor: pointer;
+  background-color: var(--cor1);
+  color: white;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 main#container div#formulario input#entrar:hover {
-    background-color: #2d5e5b;
-    border: 2px solid var(--cor1);
+  background-color: #2d5e5b;
+  border: 2px solid var(--cor1);
 }
 
 main#container div#formulario a#esqueci-senha {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: white;
-    color: #2d5e5b;
-    border: 1px solid var(--cor1);
-    text-decoration: none;
+  background-color: white;
+  color: #2d5e5b;
+  border: 1px solid var(--cor1);
+  text-decoration: none;
 }
 
 main#container div#formulario a#esqueci-senha i {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 main#container div#formulario a#esqueci-senha:hover {
-    background-color: #8adad7;
+  background-color: #8adad7;
 }
 
-main#container div#formulario input#entrar, a#esqueci-senha {
-    display: block;
-    font-weight: bolder;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 40px;
+main#container div#formulario input#entrar,
+a#esqueci-senha {
+  display: block;
+  font-weight: bolder;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
 }
